@@ -21,4 +21,13 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+
+use App\Http\Controllers\AjustesController;
+Route::get('ajustes', [AjustesController::class, 'index']);
+
+
 require __DIR__.'/auth.php';
