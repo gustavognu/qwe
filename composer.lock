@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3822d164ab3e7ad7f725f07a50064516",
+    "content-hash": "7f1a2a57b4ef3d0a7cf9d749db08a074",
     "packages": [
         {
             "name": "brick/math",
@@ -140,6 +140,144 @@
                 "source": "https://github.com/dflydev/dflydev-dot-access-data/tree/v3.0.1"
             },
             "time": "2021-08-13T13:06:58+00:00"
+        },
+        {
+            "name": "directorytree/ldaprecord",
+            "version": "v2.16.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DirectoryTree/LdapRecord.git",
+                "reference": "a246840061f1e99a14fc4ac2831da9b42f026eb0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DirectoryTree/LdapRecord/zipball/a246840061f1e99a14fc4ac2831da9b42f026eb0",
+                "reference": "a246840061f1e99a14fc4ac2831da9b42f026eb0",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-ldap": "*",
+                "illuminate/contracts": "^5.0|^6.0|^7.0|^8.0|^9.0",
+                "nesbot/carbon": "^1.0|^2.0",
+                "php": ">=7.3",
+                "psr/log": "^1.0|^2.0|^3.0",
+                "psr/simple-cache": "^1.0|^2.0",
+                "symfony/polyfill-php80": "^1.25",
+                "tightenco/collect": "^5.6|^6.0|^7.0|^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "phpunit/phpunit": "^9.0",
+                "spatie/ray": "^1.24"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LdapRecord\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Steve Bauman",
+                    "email": "steven_bauman@outlook.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A fully-featured LDAP ORM.",
+            "homepage": "https://www.ldaprecord.com",
+            "keywords": [
+                "active directory",
+                "ad",
+                "adLDAP",
+                "adldap2",
+                "directory",
+                "ldap",
+                "ldaprecord",
+                "orm",
+                "windows"
+            ],
+            "support": {
+                "docs": "https://ldaprecord.com",
+                "email": "steven_bauman@outlook.com",
+                "issues": "https://github.com/DirectoryTree/LdapRecord/issues",
+                "source": "https://github.com/DirectoryTree/LdapRecord"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/stevebauman",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-06-16T12:36:40+00:00"
+        },
+        {
+            "name": "directorytree/ldaprecord-laravel",
+            "version": "v2.5.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DirectoryTree/LdapRecord-Laravel.git",
+                "reference": "75ba6b5a981fa1e9f1ad6c2233ea4f73078f8d66"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DirectoryTree/LdapRecord-Laravel/zipball/75ba6b5a981fa1e9f1ad6c2233ea4f73078f8d66",
+                "reference": "75ba6b5a981fa1e9f1ad6c2233ea4f73078f8d66",
+                "shasum": ""
+            },
+            "require": {
+                "directorytree/ldaprecord": "^2.4.4",
+                "ext-ldap": "*",
+                "illuminate/support": "^5.6|^6.0|^7.0|^8.0|^9.0",
+                "php": ">=7.3",
+                "ramsey/uuid": "*"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "orchestra/testbench": "^3.7|^4.0|^5.0|^6.0|^7.0",
+                "phpunit/phpunit": "^7.0|^8.0|^9.0",
+                "spatie/ray": "^1.28"
+            },
+            "type": "project",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LdapRecord\\Laravel\\LdapServiceProvider",
+                        "LdapRecord\\Laravel\\LdapAuthServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LdapRecord\\Laravel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "LDAP Authentication & Management for Laravel.",
+            "keywords": [
+                "adldap2",
+                "laravel",
+                "ldap",
+                "ldaprecord"
+            ],
+            "support": {
+                "issues": "https://github.com/DirectoryTree/LdapRecord-Laravel/issues",
+                "source": "https://github.com/DirectoryTree/LdapRecord-Laravel/tree/v2.5.6"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/stevebauman",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-05-11T13:35:40+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -895,16 +1033,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v9.22.1",
+            "version": "v9.23.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "b3b3dd43b9899f23df6d1d3e5390bd4662947a46"
+                "reference": "c4eea9060d847b5c93957b203caa8f57544a76ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/b3b3dd43b9899f23df6d1d3e5390bd4662947a46",
-                "reference": "b3b3dd43b9899f23df6d1d3e5390bd4662947a46",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/c4eea9060d847b5c93957b203caa8f57544a76ab",
+                "reference": "c4eea9060d847b5c93957b203caa8f57544a76ab",
                 "shasum": ""
             },
             "require": {
@@ -925,7 +1063,7 @@
                 "psr/log": "^1.0|^2.0|^3.0",
                 "psr/simple-cache": "^1.0|^2.0|^3.0",
                 "ramsey/uuid": "^4.2.2",
-                "symfony/console": "^6.0",
+                "symfony/console": "^6.0.3",
                 "symfony/error-handler": "^6.0",
                 "symfony/finder": "^6.0",
                 "symfony/http-foundation": "^6.0",
@@ -1071,7 +1209,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2022-07-26T16:16:33+00:00"
+            "time": "2022-08-02T14:24:44+00:00"
         },
         {
             "name": "laravel/sanctum",
@@ -2482,16 +2620,16 @@
         },
         {
             "name": "psr/simple-cache",
-            "version": "3.0.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/simple-cache.git",
-                "reference": "764e0b3939f5ca87cb904f570ef9be2d78a07865"
+                "reference": "8707bf3cea6f710bf6ef05491234e3ab06f6432a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/764e0b3939f5ca87cb904f570ef9be2d78a07865",
-                "reference": "764e0b3939f5ca87cb904f570ef9be2d78a07865",
+                "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/8707bf3cea6f710bf6ef05491234e3ab06f6432a",
+                "reference": "8707bf3cea6f710bf6ef05491234e3ab06f6432a",
                 "shasum": ""
             },
             "require": {
@@ -2500,7 +2638,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0.x-dev"
+                    "dev-master": "2.0.x-dev"
                 }
             },
             "autoload": {
@@ -2527,9 +2665,9 @@
                 "simple-cache"
             ],
             "support": {
-                "source": "https://github.com/php-fig/simple-cache/tree/3.0.0"
+                "source": "https://github.com/php-fig/simple-cache/tree/2.0.0"
             },
-            "time": "2021-10-29T13:26:27+00:00"
+            "time": "2021-10-29T13:22:09+00:00"
         },
         {
             "name": "psy/psysh",
@@ -4924,6 +5062,60 @@
                 }
             ],
             "time": "2022-07-20T13:46:29+00:00"
+        },
+        {
+            "name": "tightenco/collect",
+            "version": "v8.83.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tighten/collect.git",
+                "reference": "7275c1b5f6bfc539d72bb5984d3b9a89e47e27c9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tighten/collect/zipball/7275c1b5f6bfc539d72bb5984d3b9a89e47e27c9",
+                "reference": "7275c1b5f6bfc539d72bb5984d3b9a89e47e27c9",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3|^8.0",
+                "symfony/var-dumper": "^3.4 || ^4.0 || ^5.0 || ^6.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "nesbot/carbon": "^2.23.0",
+                "phpunit/phpunit": "^8.3"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/Collect/Support/helpers.php",
+                    "src/Collect/Support/alias.php"
+                ],
+                "psr-4": {
+                    "Tightenco\\Collect\\": "src/Collect"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "description": "Collect - Illuminate Collections as a separate package.",
+            "keywords": [
+                "collection",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/tighten/collect/issues",
+                "source": "https://github.com/tighten/collect/tree/v8.83.15"
+            },
+            "time": "2022-04-15T20:31:14+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
