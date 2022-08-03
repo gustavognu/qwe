@@ -1,0 +1,7 @@
+composer require -W  directorytree/ldaprecord
+
+composer require directorytree/ldaprecord-laravel
+
+php artisan vendor:publish --provider="LdapRecord\Laravel\LdapServiceProvider"
+
+php artisan ldap:test
